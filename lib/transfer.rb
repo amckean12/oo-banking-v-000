@@ -9,11 +9,16 @@ class Transfer
     @amount = amount
   end
 
-  def valid?
+  def both_valid?
     if @sender.valid? == true && @receiver.valid? == true
       true
     else
       false
     end
   end
+
+  def execute_transaction
+  
+  end
+  
 end
